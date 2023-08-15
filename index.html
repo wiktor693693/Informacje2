@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>Stronka :D</title>
+    <link rel="shortcut icon" href="logo.png">
+    <meta name="author" content="wiktoreq12" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+    <meta property="og:image" content="https://media.discordapp.net/attachments/1107032580534059018/1138007880570777600/logo.png?width=905&height=905" />
+    <script src="https://kit.faontawensome.com/812f5b53e5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="animate__animated animate__bounceInDown">
+        <h1>Stronka :D</h1>
+        <div class="fa">
+        <i class="fa-solid fa-at"></i><b>wiktoreq12@op.pl</b></div>
+    </header>
+    <main class="animate__animated animate__bounceInDown">
+        <section id="avatar">
+            <a href="https://discord.gg/6Yh7kZd5da">
+            <img src="logo.png" alt="Mój Avatar"></a>
+        </section>
+        <section id="skills">
+            <h2>Mam umiejętności w:</h2>
+            <div class="buttons">
+                <button class="btn btn-primary">HTML <i class="fab fa-html5"></i></button>
+                <button class="btn btn-secondary">CSS <i class="fab fa-css3-alt"></i></button>
+                <button class="btn btn-success">JavaScript <i class="fab fa-js"></i></button>
+                <button class="btn btn-info">SCSS <i class="fab fa-sass"></i></button>
+                <button class="btn btn-warning">Bootstrap <i class="fab fa-bootstrap"></i></button>
+                <button class="btn btn-warning">Montaż filmów <i class="fas fa-film"></i></button>
+                <button class="btn btn-danger">Grafika <i class="fas fa-paint-brush"></i></button>
+            </div>
+        </section>
+        
+        <section id="learning">
+            <h2>Obecnie uczę się:</h2>
+            <div class="buttons">
+                <button class="btn btn-primary">Python <i class="fab fa-python"></i></button>
+                <button class="btn btn-secondary">discord.py <i class="fab fa-discord"></i></button>
+                <button class="btn btn-success">C# <i class="fab fa-windows"></i></button>
+                <button class="btn btn-info">Lua <i class="fab fa-linux"></i></button>
+                <button class="btn btn-php">Php <i class="fab fa-php"></i></button>
+            </div>
+        </section>
+        <section id="examples-html">
+            <h2>Przykładowe Kody</h2>
+            <div class="code-example" id="example1">
+                <h3>Przykład 1: Prosta strona HTML</h3>
+                <pre><code class="html">
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="pl"&gt;
+        &lt;head&gt;
+            &lt;title&gt;Moja Strona&lt;/title&gt;
+            &lt;link rel="stylesheet" href="./css/style.css"&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Witaj na mojej stronie!&lt;/h1&gt;
+            &lt;p&gt;To jest przykładowa strona HTML.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+                </code></pre>
+                <p>To jest prosty przykład struktury HTML, który tworzy nagłówek i akapit na stronie.</p>
+            </div>
+            <div class="code-example" id="example2">
+                <h3>Przykład 2: Stylizacja nagłówków i akapitów</h3>
+                <pre><code class="css">
+                    body {
+                        margin: 0;
+                        font-family: Arial, sans-serif;
+                        background-color: #262626;
+                        color: white;
+                    }
+                </code></pre>
+                <p>To jest prosty przykład struktury CSS, który dodaje czcionkę Arial do strony oraz zmienia kolor tła.</p>
+                </div>
+                <div class="code-example" id="example3">
+                    <h3>Przykład 3: Wyświetlanie komunikatu w konsoli</h3>
+                    <pre><code class="js">
+                    &lt;button class="btn btn-primary" id="console-button">Kliknij mnie!</button&gt;
+                    <script>
+                        const consoleButton = document.getElementById("console-button");
+                        consoleButton.addEventListener("click", function () {
+                            console.log("To jest przykład komunikatu w konsoli!");
+                        });
+                    </script>
+                    </code></pre>
+                    <p>To jest prosty przykład struktury JavaScript, w którym po kliknięciu przycisku wywoływujemy funkcję console.log().</p>
+                    </div>
+                    <div class="code-example" id="example4">
+                        <h3>Przykład 4: Użycie biblioteki discord.py</h3>
+                        <pre><code class="python">
+                import discord
+                
+                client = discord.Client()
+                
+                @client.event
+                async def on_ready():
+                    print(f'Zalogowano jako {client.user}')
+                
+                client.run('Twój_Token_Bota')
+                        </code></pre>
+                        <p>To jest przykład prostego użycia biblioteki discord.py do stworzenia prostego bota na Discordzie.</p>
+                    </div>
+                    <div class="code-example" id="example5">
+                        <h3>Przykład 5: Prosty program w języku C#</h3>
+                        <pre><code class="csharp">
+                using System;
+                
+                class Program
+                {
+                    static void Main(string[] args)
+                    {
+                        Console.WriteLine("Hello, World!");
+                    }
+                }
+                        </code></pre>
+                        <p>To jest przykład prostego programu w języku C#, który wypisuje "Hello, World!" na konsoli.</p>
+                    </div>
+                    <div class="code-example" id="example6">
+                        <h3>Przykład 6: Prosty skrypt w języku Lua</h3>
+                        <pre><code class="lua">
+                print("Witaj, świecie!")
+                        </code></pre>
+                        <p>To jest przykład prostego skryptu w języku Lua, który wypisuje "Witaj, świecie!" na konsoli.</p>
+                    </div>
+        </section>
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>

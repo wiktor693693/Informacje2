@@ -1,0 +1,221 @@
+body,
+h1,
+h2,
+ul,
+li,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	font-family: Arial, sans-serif;
+	background-color: #262626;
+	color: white;
+}
+
+header {
+	background-color: #3498db;
+	color: white;
+	text-align: center;
+	padding: 1em 0;
+}
+
+main {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 2em;
+}
+
+section {
+	margin-bottom: 2em;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+ul {
+	list-style: none;
+}
+
+li::before {
+	content: '\2022'; /* Kropka jako punktor listy */
+	margin-right: 0.5em;
+}
+
+#avatar img {
+	border-radius: 50%;
+	max-width: 200px;
+	animation: rotate 8s linear infinite;
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.contact {
+	margin-bottom: 0.5em;
+}
+.contact a {
+	text-decoration: none;
+	color: #3498db;
+	transition: color 0.3s;
+}
+.contact a:hover {
+	color: #2980b9;
+}
+
+.contact a i {
+	margin-right: 0.2em;
+	font-size: 0.8em;
+}
+
+.buttons {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+	margin-top: 2em;
+}
+
+.buttons .btn {
+	font-size: 1em;
+	padding: 0.5em 1em;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	border-radius: 3px;
+	box-shadow: 0 0 15px black;
+	color: white;
+	background-color: rgb(29, 29, 29);
+	transition: all 0.3s;
+}
+
+.buttons .btn i {
+	margin-right: 0.5em;
+}
+
+/* Dodane style kolorów dla ikonek */
+.btn-primary i {
+	color: orange;
+}
+
+.btn-secondary i {
+	color: blue;
+}
+
+.btn-success i {
+	color: yellow;
+}
+
+.btn-info i {
+	color: teal;
+}
+
+.btn-warning i {
+	color: purple;
+}
+
+.btn-danger i {
+	color: red;
+}
+
+.btn-php i {
+	color: rgb(106, 57, 255);
+}
+
+.buttons .btn:hover {
+	background-color: rgb(78, 78, 78);
+	box-shadow: 0 0 15px rgb(78, 78, 78);
+}
+
+.footer.show {
+	bottom: 0;
+	opacity: 1;
+}
+
+#examples-html {
+	margin-top: 2em;
+	padding-bottom: 3em;
+}
+
+.toggle-button {
+	background-color: #3498db;
+	color: white;
+	border: none;
+	padding: 0.3em 0.8em;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 1em;
+	transition: background-color 0.3s, color 0.3s; /* Dodaj płynne przejście */
+}
+
+/* Zmieniony styl dla przykładów kodów */
+.code-example {
+	margin-bottom: 2em;
+	padding: 1em;
+	background-color: #282828;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	overflow: hidden; /* Dodaj overflow, aby ukryć treść przy zwiniętym przykładzie */
+	transition: max-height 0.3s ease-in-out, background-color 0.3s; /* Dodaj płynne przejście */
+}
+
+/* Zmieniony styl dla przykładów kodów w stanie rozwiniętym */
+.code-example.expanded {
+	background-color: #222; /* Zmień tło po rozwinięciu */
+}
+
+#example2 {
+	margin-top: 2em;
+    box-shadow: 0 0 15px black;
+}
+
+#example2 h1 {
+	color: #3498db;
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+#example2 p {
+	line-height: 1.5;
+	margin-bottom: 1em;
+}
+
+#example3 {
+    box-shadow: 0 0 15px black;
+}
+
+#example1 {
+    box-shadow: 0 0 15px black;
+}
+
+#example4 {
+    box-shadow: 0 0 15px black;
+}
+
+#example5 {
+    box-shadow: 0 0 15px black;
+}
+
+#example6 {
+    box-shadow: 0 0 15px black;
+}
+
+.fa {
+    transition: color .5s;
+}
+
+.fa:hover {
+    cursor: pointer;
+    color: #a856ff;
+}
