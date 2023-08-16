@@ -1,3 +1,20 @@
+body::-webkit-scrollbar {
+    width: 11px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #1c002f;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #9b34db;
+	border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #683289;
+}
+
 body,
 h1,
 h2,
@@ -64,13 +81,13 @@ li::before {
 .contact {
 	margin-bottom: 0.5em;
 }
-.contact a {
+a {
 	text-decoration: none;
-	color: #3498db;
+	color: #caa2ff;
 	transition: color 0.3s;
 }
-.contact a:hover {
-	color: #2980b9;
+a:hover {
+	color: #a424ff;
 }
 
 .contact a i {
@@ -177,7 +194,7 @@ li::before {
 
 #example2 {
 	margin-top: 2em;
-    box-shadow: 0 0 15px black;
+	box-shadow: 0 0 15px black;
 }
 
 #example2 h1 {
@@ -192,30 +209,141 @@ li::before {
 }
 
 #example3 {
-    box-shadow: 0 0 15px black;
+	box-shadow: 0 0 15px black;
 }
 
 #example1 {
-    box-shadow: 0 0 15px black;
+	box-shadow: 0 0 15px black;
 }
 
 #example4 {
-    box-shadow: 0 0 15px black;
+	box-shadow: 0 0 15px black;
 }
 
 #example5 {
-    box-shadow: 0 0 15px black;
+	box-shadow: 0 0 15px black;
 }
 
 #example6 {
-    box-shadow: 0 0 15px black;
+	box-shadow: 0 0 15px black;
 }
 
 .fa {
-    transition: color .5s;
+	transition: color 0.5s;
 }
 
 .fa:hover {
+	cursor: pointer;
+	color: #a856ff;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	padding: 2em 0;
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer-section {
+	flex: 1;
+	padding: 1em;
+	text-align: center;
+}
+
+.footer-section h2 {
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+.social-media {
+	list-style: none;
+	padding: 0;
+}
+
+.social-media li {
+	display: inline;
+	margin: 0 0.5em;
+}
+
+.social-media a {
+	color: white;
+	font-size: 1.5em;
+	text-decoration: none;
+	color: #caa2ff;
+}
+
+.social-media a:hover {
+	color: #a424ff;
+}
+
+.settings-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #1b1b1b;
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+}
+
+.settings-section h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.settings-row {
+    margin-bottom: 1em;
+}
+
+.settings-row label {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.settings-row select {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5px;
+	background-color: black;
+	box-shadow: 0 0 20px black;
+	border: none;
+	color: white;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.settings-row select:focus {
+	background-color: rgb(52, 52, 52);
+	box-shadow: 0 0 20px rgb(52, 52, 52);
+}
+
+.settings-card-button {
+    width: 1879px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #fc2f2f;
+    border: 2px solid #a11f1f;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 12px;
     cursor: pointer;
-    color: #a856ff;
+    transition: all 0.5s;
+}
+
+.settings-card-button:hover {
+    background-color: #9b1f1f;
+    border: 2px solid #711a1a;
+}
+
+.flash {
+    position: fixed;
+    background-color: rgba(255, 0, 0, 0.5);
+    width: 20px;
+    height: 20px;
+    border-radius: 40%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s, width 0.3s, height 0.3s;
+	z-index: 1;
 }
