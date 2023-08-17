@@ -24,12 +24,17 @@
 <body>
     <header class="animate__animated animate__bounceInDown">
         <h1>Stronka :D</h1>
-        <div class="contact">
-            <a href="mailto:wiktoreq12@op.pl">
-                <i class=""></i> <b>wiktoreq12@op.pl</b>
-            </a>
-        </div>
-    </header>
+            <div class="contact">
+                <a href="mailto:wiktoreq12@op.pl">
+                    <i class=""></i> <b>wiktoreq12@op.pl</b>
+                </a>
+                    <section id="visit-counter">
+                        <button class="visit-button">
+                            <i class="fas fa-eye"></i> Odwiedzin strony: <span id="visit-count">0</span>
+                        </button>
+                    </section>
+                </div>
+        </header>
 
     <div class="flash"></div>
     <main class="animate__animated animate__bounceInDown">
@@ -144,19 +149,22 @@
                         <p>To jest przykład prostego skryptu w języku Lua, który wypisuje "Witaj, świecie!" na konsoli.</p>
                     </div>
                 </section>
-    </main>
+            </main>
 
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
-    <div class="bubble"></div>
+    <div class="bubble-container">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
     <footer>
         <section class="footer-section">
             <h2>O mnie</h2>
@@ -172,8 +180,8 @@
         </section>
         <section class="footer-section">
             <h2>Kontakt</h2>
-            <p>Skontaktuj się ze mną poprzez adres e-mail: </i><a href="mailto:wiktoreq12@op.pl">wiktoreq12@op.pl</p><br></a>
-                <p>Skontaktuj się ze mną przez mojego discorda: <br> <a href="">_wiktoreq_12</p><br></a>
+            <p>Skontaktuj się ze mną poprzez adres e-mail: <a href="mailto:wiktoreq12@op.pl">wiktoreq12@op.pl</a></p>
+            <p>Skontaktuj się ze mną przez mojego discorda: <br> <a href="">_wiktoreq_12</a></p>
         </section>
         <section class="footer-section">
             <h2>Co zmieniono (17.08.2023)</h2>
@@ -184,16 +192,18 @@
             <p>Dodanie nie wiem czego narazie 😅</p>
         </section>
     </footer>
-    <script src="https://kit.faontawensome.com/812f5b53e5.js" crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/812f5b53e5.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="plugin.js"></script>
+    <script src="counter.js"></script>
     <script>
         const bubbles = document.querySelectorAll(".bubble");
-    
+
         bubbles.forEach(bubble => {
             const randomX = Math.random() * window.innerWidth;
             const randomDelay = Math.random() * 5; // Opóźnienie startu dla efektu "latających" bąbelków
-    
+
             bubble.style.left = `${randomX}px`;
             bubble.style.animationDelay = `${randomDelay}s`;
         });
